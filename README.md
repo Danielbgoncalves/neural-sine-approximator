@@ -2,6 +2,8 @@
 Esse projeto faz parte da pesquisa da Iniciação Científica do LIPAI-Iniciação Científica e Trabalho de Conclusão ofertada na UFU. Aqui vou buscar criar e explicar a criação e lógica de uma rede neural simples, o objetivo é não usar bibliotecas que simplifiquem demais e abstraiam do programador o funcionamento real das redes neurais como PyTorch e TensorFlow.
 Serão usadas bibliotecas de cálculos como a NumPy para calculos de multiplicações de matrizes e senos, bibliotecas como matplotlib serão usadas para criação de gráfcos que vão auxiliar no entendimento dos processos.
 
+[Experimente no Colab](https://colab.research.google.com/drive/1_mVOdsJ8HZ5Q13bxM43cG92GGNtgszCW?usp=sharing)
+
 ## Lógica geral
 Antes de tudo a rede neural é uma função que recebe um apanhado de entradas e gera outro de saída. No exemplo desse notebook a função seno recebe uma entrada x e uma saída y, assim será a rede neural, receberá um valor e deverá responder com outro que, esperamos, seja o mais próximo possível da resposta correta.
 
