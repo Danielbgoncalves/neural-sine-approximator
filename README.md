@@ -53,7 +53,7 @@ Assim podemos encontra a direção que mais rapidamente reduz a função de perd
 A regra geral de ajuste do peso é:
 
 $$
-z_j^L = Σ_k (w_jk^L * a_k^(L-1)) + b_j^L 
+z_j^L = Σ_k (w_jk^L * a_k^{L-1}) + b_j^L 
 $$
 
 
