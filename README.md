@@ -14,12 +14,12 @@ pensar que eles são apenas bolas que gardam pesos. Esse é uma imagem que pode 
 
 ![imagem de uma rede neural simples](imagens/exemplo_rede_neural.jpeg)
 
-Os neurônios ficam separados em 3 camadas (ou, do inglês, layers), os de entrada, intermediários (ou escondidos), e os de saída. Os intermediários também podem ser chamados de escondidos, isso porque não são a parte interessante para o usuário da rede;para quem a usa o importante é a camda de entrada, que recebe os dados do usuário e a desaída que responde a informação pronta, a camada intermediária é, para os usuários uma caixa preta.
+Os neurônios ficam separados em 3 camadas (ou, do inglês, layers), os de entrada, intermediários, e os de saída. Os intermediários também podem ser chamados de escondidos, isso porque não são a parte interessante para o usuário da rede;para quem a usa o importante é a camda de entrada, que recebe os dados do usuário e a desaída que responde a informação pronta, a camada intermediária é, para os usuários uma caixa preta.
 
 Redes podem possuir diversos neurônios de entrada( como uma rede que interpreta imagens, cada pixel vai ser representado por um neurônio na camada inicial) ou apenas um, como é o caso dessa rede, ela recebe apenas um valor no eixo das abscisas.
 A camada intermediária é quem de fato "aprende" e prediz resultados, por causa disso possui vários neurônios e pode possuir várias camadas dentro de sí. No exemplo daqui camda intermediária tem apenas uma _fileira_ de 20 neurônios.
 
-A camada de saída também pode possuir diverssos neurônios como em um caso em que predizse uma imagem é a letra A ou E ou I ..., se há múltipla escolha pode haver vários na saída. Se a resposta da rede deve ser SIM ou NÃO pode haver apenas um neurônio e seu valor indicar, 0 como falso e 1 como verdadeiro. Aqui há apenas um neurônio, seu valor é a resposta da rede, como a função seno possui imagem no intervalo [-1,1] esses são os valores que o neurônio pode ter.
+A camada de saída também pode possuir diversos neurônios como em um caso em que predizse uma imagem é a letra A ou E ou I ..., se há múltipla escolha pode haver vários na saída. Se a resposta da rede deve ser SIM ou NÃO pode haver apenas um neurônio e seu valor indicar, 0 como falso e 1 como verdadeiro. Aqui há apenas um neurônio, seu valor é a resposta da rede, como a função seno possui imagem no intervalo [-1,1] esses são os valores que o neurônio pode ter.
 
 ---
 
