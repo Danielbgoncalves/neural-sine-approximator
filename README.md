@@ -44,15 +44,17 @@ O valor do ultimo neuronio vai ser a soma: -2.82
 ---
 
 ### Backpropagation
-Depois que a rede faz a previsão e calculamos o quão errada ela está (pela Função de Perda que podem ser de vários tipos, mas o objetivo é sempre determinar o quão errada foi a resposta da rede), precisamos ajustar os pesos para que, na próxima tentativa, o erro seja menor. Esse processo de ajuste é o que chamamos de Backpropagation.
+Depois que a rede faz a previsão e calculamos o quão errada ela está (por meio da Função de Perda, que pode ser de vários tipos, mas o objetivo é sempre determinar o quão errada foi a resposta da rede), precisamos ajustar os pesos para que, na próxima tentativa, o erro seja menor. Esse processo de ajuste é o que chamamos de Backpropagation.
 
-O objetivo é minimizar a perda ajustando os pesos da rede. Para isso usamos o **Gradiente Descendente**.
-Grdiente Descendente é nada mais é que aplicar derivada nessa Função de Perda, a deivada é  a reta tangente à curva num determinado ponto, essa reta aponta para a direção de maior crescimento da função, se formos na direção oposta entamos indo na direção que o erro é o menos possível. E exatamente isso o que queremos! Se vamos nessa direção, achamos como devemos mexer nos parametros da função para diminuir o erro. Como os paramentros dessa função são o resultado otido pela rede e o resultado real podemos usar isso para determinar como os pesos devem mudar.
+Para isso usamos o **Gradiente Descendente**.
+Gradiente Descendente é nada mais é que aplicar derivada nessa Função de Perda: a deivada é a reta tangente à curva num determinado ponto, essa reta aponta para a direção de maior crescimento da função, se formos na direção oposta entamos indo na direção que o erro é o menos possível. E exatamente isso o que queremos! Se vamos nessa direção, achamos como devemos mexer nos parametros da função para diminuir o erro. Como os paramentros dessa função são o resultado otido pela rede e o resultado real podemos usar isso para determinar como os pesos devem mudar.
 Assim podemos encontra a direção que mais rapidamente reduz a função de perda. Imagine a função de perda como um gráfico: a derivada no ponto atual mostra a direção de maior crescimento, então seguimos na direção contrária, onde ela diminui.
 
 A regra geral de ajuste do peso é:
 
-$$ z_j^L = Σ_k (w_jk^L * a_k^(L-1)) + b_j^L $$
+$$
+z_j^L = Σ_k (w_jk^L * a_k^(L-1)) + b_j^L 
+$$
 
 
 Onde:  
