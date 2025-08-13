@@ -119,14 +119,16 @@ $$ ∂L/∂w_jk^L = (∂L/∂a_j^L) * (∂a_j^L/∂z_j^L) * (∂z_j^L/∂w_jk^L)
 
 ---
 
-### Primeiro termo: $$ ∂L/∂a_j^L $$
+### Primeiro termo: 
+$$ ∂L/∂a_j^L $$
 
 
 - Representa o **erro local**, ou seja, o quanto o neurônio `j` da camada `L` influencia na perda.
 
 ---
 
-### Segundo termo: $$ ∂z_j^L/∂w_jk^L $$
+### Segundo termo: 
+$$ ∂z_j^L/∂w_jk^L $$
 
 
 - É a influência direta do peso `w_jk` na entrada ponderada `z_j`.
@@ -154,7 +156,7 @@ $$ ∂L/∂w_jk^L = (∂L/∂a_j^L) * (∂a_j^L/∂z_j^L) * (∂z_j^L/∂w_jk^L)
 
 - Como não há o erro direto, precisamos propagar o erro da camada de saída até ela.
 
-$$ δ_j^L = Σ_m (δ_m^(L+1) * w_mj^(L+1)) * ∂a_j^L/∂z_j^L $$
+$$ δ_j^L = Σ_m (δ_m^(L+1) * w_mj^{L+1}) * ∂a_j^L/∂z_j^L $$
 
 
 Onde:  
