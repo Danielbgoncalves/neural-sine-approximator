@@ -29,10 +29,12 @@ Como na imagem:
 
 ![imagem de uma rede neural com pesos](imagens/rede_neural_pesos.png)
 
-A gente pode considerar que o peso do neuronio de cima é W1=0.5 , assim, 1 * 0.5 = 0.5 que éo valor mostrado, o peso do segundo neurônio é W2=0.7 e ele também possui um bias (um valor extra a ser somado) b2=1, assim 1*0.7 + 1 = 1.7, o mesmo para o neuronio de baixo: w3=3.4 e b3=1.7. O neuronio de saída tembém possui pesos e bias. É importante entender que os pesos "estão nas conexões" entre neuronios e o bias é do neuronio, isso é, entre o neuoronio final e cada um dos 3 neuronios intermediários há um peso único, ou seja, 3 pesos, mas o bias é unico para o neuronio final. Uma possibilidade é que a configuração seja:
+A gente pode considerar que o peso do neuronio de cima é W1=0.5 , assim, 1 * 0.5 = 0.5 que éo valor mostrado, o peso do segundo neurônio é W2=0.7 e ele também possui um bias (um valor extra a ser somado) b2=1, assim 1*0.7 + 1 = 1.7, o mesmo para o neuronio de baixo: w3=3.4 e b3=1.7. O neuronio de saída tembém possui pesos e bias. É importante entender que os pesos "estão nas conexões" entre neuronios e o bias é do neuronio, isso é, entre o neuoronio final e cada um dos 3 neuronios intermediários há um peso único, mas o bias é unico para o neuronio final. Uma possibilidade é que a configuração seja:
+$$$ 
 0.5 * 0.4 - 0.9 = -0.7
 1.7 * 0.4 - 0.9 = -1.22
 5.1 * 0 - 0.9 = -0.9
+$$$
 O valor do ultimo neuronio vai ser a soma: -2.82
 
 ![imagem de uma rede neural com pesos](imagens/rede_neural_pesos_final.png)
